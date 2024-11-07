@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryColor: '#3563E9',
+        backgroundCardColor: "#5CAFFC",
+        selectionColor: '#3D5278',
+        secondColor: '#90A3BF',
+        bgPrimaryColor: '#F6F7F9',
       },
     },
   },
