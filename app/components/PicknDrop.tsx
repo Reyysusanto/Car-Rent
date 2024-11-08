@@ -10,7 +10,7 @@ const PicknDrop = ({title, location, date, time}: {title: string, location: stri
                     </div>
                     <h3 className="font-semibold text-xs">{title}</h3>
                 </div>
-                <div className="flex justify-between gap-x-5 pt-5">
+                <div className="flex justify-between gap-x-5 mt-5">
                     <div className="flex flex-col gap-y-2">
                         <h4 className="text-sm font-semibold">Location</h4>
                         <div className="flex items-start gap-x-1">

@@ -10,6 +10,7 @@ export default function Home() {
       <div className="flex flex-col mx-8 mt-8 gap-y-7 pb-8">
         <div className="flex gap-x-8">
           <Card 
+            bgImageCard="/Images/BG.png"
             backgroundCard="bg-backgroundCardColor md:flex-1"
             buttonCard="bg-primaryColor"
             title="The Best Platform for Car Rental" 
@@ -17,14 +18,15 @@ export default function Home() {
             subtext="Ease of doing a car rental safely and reliably. Of course at a low price." 
           />
           
-          <div className="hidden md:block flex-1">
-            <Card 
+          <div className="hidden md:block flex-1 overflow-hidden">
+            <Card
+              bgImageCard="/Images/BG2.png"
               backgroundCard="bg-primaryColor"
               buttonCard="bg-backgroundCardColor"
               title="The Best Platform for Car Rental"
               imageCard="/Images/nissan-gtr-silver.png"
               subtext="Ease of doing a car rental safely and reliably. Of course at a low price." 
-            />
+              />
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-5">
