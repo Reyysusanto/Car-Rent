@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import PopularCar from "./components/PopularCar";
 import PicknDrop from "./components/PicknDrop";
 import { RiArrowUpDownFill } from "react-icons/ri";
+import RecomendationCar from "./components/RecomendationCar";
 
 export default function Home() {
   return (
-    <header className="bg-bgPrimaryColor">
+    <main className="bg-bgPrimaryColor">
       <Navbar />
       <div className="flex flex-col mx-8 mt-8 gap-y-7 pb-8">
         <div className="flex gap-x-8">
@@ -45,6 +47,15 @@ export default function Home() {
           />
         </div>
       </div>
-    </header>
+      <div className="flex flex-col gap-y-10 mb-10">
+        <PopularCar />
+        <RecomendationCar />
+      </div>
+      <div className="flex justify-center mb-12">
+        <button className="bg-primaryColor text-white p-2 rounded-lg">
+          Show more car
+        </button>
+      </div>
+    </main>
   );
 }
